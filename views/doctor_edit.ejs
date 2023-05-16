@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="/img/جامعه المنوفيه.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./add_doctor.css">
+    <title>Menofia University</title>
+
+</head>
+
+<body>
+
+
+<form action="/save" method="post">
+    <div class="form col">
+        <div
+            style="border:1px solid  #c9e3da;;border-radius: 20px;padding: 13px;   padding-left: 0px;  height: auto;">
+            <div class="cform">
+                <h1>Add Doctor </h1>
+                <label for="name" style="font-style: italic;">First Name </label> <br> <br>
+                <input placeholder="Enter Username" style="font-style: italic;" type="text" id="name" value="<%= user.doctor_Fname %>" name="doctor_Fname"/>
+            </div>
+            <div class="cform">
+                <label for="name" style="font-style: italic;">Last Name </label> <br> <br>
+                <input placeholder="Enter Username" style="font-style: italic;" type="text" id="name" value="<%= user.doctor_Lname %>"name="doctor_Lname" />
+            </div>
+            <div class="cform">
+                <label for="id" style="font-style: italic;">Email</label><br> <br>
+                <input placeholder="Enter your Email " style="font-style: italic;" type="text" id="id" value="<%= user.Email %>"name="Email" />
+            </div>
+            
+            <div class="cform">
+                <i class="bi bi-lock-fill" style="width: 15px; color: white;"></i>
+                <label for="id" style="font-style: italic;">Id</label><br> <br>
+                <input placeholder="Enter your id " style="font-style: italic;" type="text"value="<%= user.Id %>" id="id" name="Id" />
+            </div>
+            <div class="buttom ">
+                <input style="font-style: italic;" type="submit" value="Add" />
+            </div>
+        </div>
+</form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

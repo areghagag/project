@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" href="/img/جامعه المنوفيه.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./login.css">
+    <title>Menofia University</title>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="logo-container ms-5">
+            <img class="" src="/img/جامعه المنوفيه.png" alt="">
+        </div>
+        <span class="navbar-toggler-icon">
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="margin-left: 33px;"></button>
+        </span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="margin-right: 60px;">
+                <li class="nav-item active">
+                    <a class="nav-link p-2 p-lg-3" href="./Home.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 p-lg-3" href="./Home.html">About</a>
+                </li>
+        </div>
+    </nav>
+
+    <form action="/login" method="post">
+        <div class="form col">
+            <div
+                style="border:1px solid  #c9e3da;;border-radius: 20px;padding: 13px;   padding-left: 0px;  height: auto;">
+                <div class="cform">
+                    <h1>Login </h1>
+                    <i class="bi bi-person" style="width: 15px; color: white; "></i>
+                    <label for="name" style="font-style: italic;" >Username</label> <br> <br>
+                    <input placeholder="Enter Username" style="font-style: italic;" type="text" id="name"  required/>
+                </div>
+                <div class="cform">
+                    <i class="bi bi-lock-fill" style="width: 15px; color: white;"></i>
+                    <label for="pass" style="font-style: italic;">Password</label><br> <br>
+
+                    <input placeholder="Enter password " style="font-style: italic;" type="password" id="pass" required />
+                    <!-- <div class="last">
+                        <a href="">
+                            <p style="font-style: italic; margin-top: 5px;">Forget password? </p>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="data">
+                    <input type="radio" id="System_User" name="fav_language"
+                        style="width:15px;margin-left: 29px; font-style: italic; margin-top: 5px;" value="System_User">
+                    <label for="System_User">System User</label><br>
+                    <input type="radio" id="Staff" name="fav_language"
+                        style="width:15px; font-style: italic; margin-top: 2px;" value="Staff">
+                    <label for="Staff">Staff</label><br>
+                    <input type="radio" id="Student" name="fav_language"
+                        style="width:15px; font-style: italic; margin-top: 2px;" value="Student">
+                    <label for="Student" style="    margin-right: 14px;">Student</label>
+                </div>
+                <div class="buttom ">
+                    <input style="font-style: italic;" type="submit" value="Login" />
+                    <!-- <input type="reset"/> -->
+                </div>
+               <!-- <div class="last">
+                    <a href="">
+                        <p style="font-style: italic; margin-left: 117px;">Don't have an accont ? </p>
+                    </a>
+                </div>
+                <div class="last">
+                     <p>Lost your password? </p> 
+                <a><p>Don't have an accont </p></a>
+                </div>-->
+            </div>
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
