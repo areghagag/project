@@ -74,7 +74,7 @@ app.get("/doctor_home", (req, res) => {
 });
 
 
-app.get('/editdoctor/:userId',(req,res)=>{
+/*app.get('/editdoctor/:userId',(req,res)=>{
   const userId=req.params.userId;
   let sql=`Select * from doctor where id = ${userId}`;
   let query=connection.query(sql,(err,result) =>{
