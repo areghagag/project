@@ -51,18 +51,18 @@
 <div style="background: rgba(0,0,0,.4); "></div>
     <!-- section 1 -->
     <section >
-        <form action="" method="post">
+        <form action="/addDep" method="post">
             <div class="form col">
                 <div
                     style="border:1px solid  #c9e3da;border-radius: 20px;padding: 13px;   padding-left: 0px;  height: auto;">
                     <div class="cform">
                         <h1>Add Department </h1>
                         <label for="name" style="font-style: italic;">Department Name</label> <br> <br>
-                        <input style="font-style: italic;  " placeholder="Enter Name"  type="text" id="name" required/>
+                        <input style="font-style: italic;  " placeholder="Enter Name"  type="text" id="name"name="department_name" required/>
                     </div>
                     <div class="cform">
                         <label for="code" style="font-style: italic;">Department Code</label><br> <br>
-                        <input placeholder="Enter Code " style="font-style: italic;" type="text" id="code" required/>
+                        <input placeholder="Enter Code " style="font-style: italic;" type="text" id="code"name="department_code" required/>
                         <div class="buttom ">
                             <input style="font-style: italic;" type="submit" value="Add" />
                         </div>

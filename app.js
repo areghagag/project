@@ -74,7 +74,7 @@ app.get("/doctor_home", (req, res) => {
 });
 
 
-/*app.get('/editdoctor/:userId',(req,res)=>{
+app.get('/editdoctor/:userId',(req,res)=>{
   const userId=req.params.userId;
   let sql=`Select * from doctor where id = ${userId}`;
   let query=connection.query(sql,(err,result) =>{
@@ -89,12 +89,30 @@ app.get("/doctor_home", (req, res) => {
 
 });
 
+app.post('/update',(req, res) => {
+  const userId = req.body.id;
+  let sql = "update doctor SET doctor_Fname='"+req.body.doctor_Fname+"',  doctor_Lname='"+req.body.doctor_Lname+"',  Email='"+req.body.Email+"' ,  Id='"+req.body.id+"' where id ="+userId;
+  let query = connection.query(sql,(err, results) => {
+    if(err) throw err;
+    res.redirect('/');
+    console.log(sql)
+  });
+});
+app.post('/addDep',(req,res)=>{
+  let data={department_name:req.params.department_name,department_code:req.params.department_code}
+  let sql="INSERT INTO department set ?"
+  let query=connection.query(sql,data,(err,result)=>{
+    if(err) throw err;
+    
+  });
+});
+
 /*app.get('/deletedoctor/:userId',(req,res)=>{
   const userId=req.params.userId;
   let sql=`delete from doctor where id = ${userId}`;
   let query=connection.query(sql,(err,result) =>{
     if(err) throw err;
-    res.redirect("/")
+    res.redirect("doctor_home")
 
     });
   });*/
@@ -137,6 +155,7 @@ app.get("/add_department", (req, res) => {
 app.get("/add_cource", (req, res) => {
   res.render("add_material")
 });
+
 
 ///404 error
 /*app.use((req, res) => {
